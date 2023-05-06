@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chatty</title>
+    <%= csrf_meta_tags %>
+    <%= action_cable_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => 'reload' %>
+    <%= favicon_link_tag 'favicon.ico' %>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.0/gh-fork-ribbon.min.css" />
+  </head>
+
+  <body>
+   <a class="github-fork-ribbon right-bottom fixed" href="https://github.com/sophiedebenedetto/action-cable-example" title="Fork me on GitHub">Fork me on GitHub</a>
+  <%= render partial: 'layouts/navbar' %>
+
+  <div class="container">
+    <%= yield %>
+  </div>
+  </body>
+</html>
+
