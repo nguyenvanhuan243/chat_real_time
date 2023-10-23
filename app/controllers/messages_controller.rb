@@ -16,8 +16,6 @@ class MessagesController < ApplicationController
       message: message.content,
       user: message.user.username
     head :ok
-    puts "################## produce_message DONE!"
-    puts "################## produce_message DONE!"
-    puts "################## produce_message DONE!"
+    puts "###### produce_message DONE! ######"
   end
 end
